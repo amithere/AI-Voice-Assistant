@@ -21,7 +21,7 @@ def AnswerModifier(Answer):
 def QueryModifier(Query):
     new_query = Query.lower().strip()
     query_words = new_query.split()
-    question_words = ["what", "who", "where", "when", "why", "how", "which", "whose", "whom", "can you", "what's", "where's", "how's"]
+    question_words = ["what", "who", "where", "when", "why", "how", "which", "whose", "whom", "can you", "where's", "how's"]
 
     if any(word + " " in new_query for word in question_words):
         if query_words[-1][-1] in ['.', '?', '!']:
